@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo Visit Registration</title> <!--Zoo kasi si Kuya Kim ang nasa sample picture at mahilig siya sa animals-->
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        fieldset { margin-bottom: 15px; padding: 10px; }
+        .subtitle { opacity: 0.2; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <h2>Zoo Visit Registration</h2>
+    <p class="subtitle">ADET ACTIVITY #3 | BSCS - 2A | ANCAJAS, JOHN PATRICK DP.</p>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Visitor Information</legend>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="button" onclick="document.getElementById('password').value=''">Clear</button><br><br>
+            
+            <label for="visitor_id">Visitor ID:</label>
+            <input type="text" id="visitor_id" name="visitor_id" value="12345" readonly>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+            <input type="checkbox" id="feeding" name="preferences" value="Feeding Time">
+            <label for="feeding">Attend Feeding Time</label><br>
+            <input type="checkbox" id="tour" name="preferences" value="Guided Tour">
+            <label for="tour">Join Guided Tour</label><br>
+            <input type="checkbox" id="souvenir" name="preferences" value="Souvenir Shop">
+            <label for="souvenir">Visit Souvenir Shop</label><br>
+            <input type="checkbox" id="photo" name="preferences" value="Photo Session">
+            <label for="photo">Photo Session with Animals</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Age Group</legend>
+            <input type="radio" id="child" name="age" value="Child">
+            <label for="child">Child</label><br>
+            <input type="radio" id="adult" name="age" value="Adult">
+            <label for="adult">Adult</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Notes</legend>
+            <label for="comments">Special Requests:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Location</legend>
+            <label for="location">Select Location:</label>
+            <select id="location" name="location">
+                <optgroup label="Luzon">
+                    <option value="manila">Manila</option>
+                    <option value="quezon">Quezon City</option>
+                </optgroup>
+                <optgroup label="Visayas">
+                    <option value="cebu">Cebu</option>
+                    <option value="iloilo">Iloilo</option>
+                </optgroup>
+                <optgroup label="Mindanao">
+                    <option value="davao">Davao</option>
+                    <option value="zamboanga">Zamboanga</option>
+                </optgroup>
+            </select>
+            <br><br>
+            <label for="ticket">Ticket Type:</label>
+            <select id="ticket" name="ticket">
+                <option value="regular">Regular</option>
+                <option value="vip" disabled>VIP (Unavailable)</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Submission</legend>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+
+    <h2>Quick Options</h2>
+    <div>
+        <h3>Donate to Zoo</h3>
+        <form action="#" method="post">
+            <label for="donorname">Name:</label>
+            <input type="text" id="donorname" name="donorname" required><br><br>
+            
+            <label for="amount">Donation Amount (PHP 1000):</label>
+            <input type="number" id="amount" name="amount" required><br><br>
+            
+            <input type="submit" value="Donate">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+
+    <div>
+        <h3>Private Animal Picture Reservation</h3>
+        <form action="#" method="post">
+            <label for="animal">Choose an Animal:</label>
+            <select id="animal" name="animal">
+                <option value="lion">Lion</option>
+                <option value="tiger">Tiger</option>
+                <option value="elephant">Elephant</option>
+                <option value="giraffe">Giraffe</option>
+                <option value="panda">Panda</option>
+                <option value="penguin">Penguin</option>
+                <option value="koala">Koala</option>
+                <option value="zebra">Zebra</option>
+                <option value="rhino">Rhinoceros</option>
+            </select><br><br>
+            
+            <label for="time">Preferred Time:</label>
+            <input type="time" id="time" name="time" required><br><br>
+            
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+</body>
+</html>
