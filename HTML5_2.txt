@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Boxes</title>
+</head>
+<body>
+    <h2>Zoo Visit Preferences</h2>
+    <form>
+        <input type="checkbox" id="feeding" name="preferences" value="Feeding Time">
+        <label for="feeding">Attend Feeding Time</label><br>
+        
+        <input type="checkbox" id="tour" name="preferences" value="Guided Tour">
+        <label for="tour">Join Guided Tour</label><br>
+        
+        <input type="checkbox" id="souvenir" name="preferences" value="Souvenir Shop">
+        <label for="souvenir">Visit Souvenir Shop</label><br>
+        
+        <input type="checkbox" id="photo" name="preferences" value="Photo Session">
+        <label for="photo">Photo Session with Animals</label><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

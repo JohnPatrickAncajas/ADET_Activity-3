@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPTGROUP Tag</title>
+</head>
+<body>
+    <h2>Select Your Location</h2>
+    <form>
+        <label for="location">Location:</label>
+        <select id="location" name="location">
+            <optgroup label="Luzon">
+                <option value="manila">Manila</option>
+                <option value="quezon">Quezon City</option>
+            </optgroup>
+            <optgroup label="Visayas">
+                <option value="cebu">Cebu</option>
+                <option value="iloilo">Iloilo</option>
+            </optgroup>
+            <optgroup label="Mindanao">
+                <option value="davao">Davao</option>
+                <option value="zamboanga">Zamboanga</option>
+            </optgroup>
+        </select><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

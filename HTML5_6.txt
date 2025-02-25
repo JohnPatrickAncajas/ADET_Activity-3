@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldset, Legend, Readonly, Disabled</title>
+</head>
+<body>
+    <h2>Zoo Ticket Reservation</h2>
+    <form>
+        <fieldset>
+            <legend>Visitor Information</legend>
+            <label for="visitor_id">Visitor ID:</label>
+            <input type="text" id="visitor_id" name="visitor_id" value="12345" readonly><br><br>
+            
+            <label for="ticket">Ticket Type:</label>
+            <select id="ticket" name="ticket">
+                <option value="regular">Regular</option>
+                <option value="vip" disabled>VIP (Unavailable)</option>
+            </select>
+        </fieldset><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
